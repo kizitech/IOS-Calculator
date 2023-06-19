@@ -53,7 +53,7 @@ To get a local copy of the calculator application up and running on your machine
 
 ## Author
 
-- LinkedIn - [Ohani Kizito](https://www.your-site.com)
+- LinkedIn - [Ohani Kizito](https://www.linkedin.com/in/ohanikizito/)
 - Twitter - [Ohani_Kizito](https://www.twitter.com/Ohani_Kizito)
 
 
