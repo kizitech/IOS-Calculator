@@ -1,0 +1,127 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* WEBKIT TO HIDE SCROOL BAR */
+::-webkit-scrollbar {
+    display: none; 
+}
+
+/* BASIC COLOR USED */
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-yellow: #ff9f0a;
+    --color-grey: #343434;
+    --color-light-grey: #a5a5a5;
+}
+
+body {
+    background-color: #333333;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-color: var(--color-black);
+    }
+}
+
+
+/* WRAPPER CONTAINER */
+.container {
+    width: 320px;
+    height: 560px;
+    background-color: var(--color-black);
+    border-radius: 30px;
+    box-shadow: 1em 2em 6em var(--color-black);
+    position: relative;
+}
+
+
+/* RESULT CONTAINER */
+.result {
+    color: var(--color-white);
+    height: 170px;
+    display: grid;
+    padding: 0% 10%;
+    justify-content: flex-end;
+    place-items: flex-end;
+}
+
+/* RESULT TEXTCONTENT */
+.result span {
+    display: grid;
+    font-size: 60px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+
+/* BUTTON CONTAINER */
+.buttons {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-columns: repeat(4, 70px);
+}
+
+
+/* ALL BUTTONS INCLUDING THE NUMBERS NAD FULLSTOP */
+.item, numbers {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    color: var(--color-white);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 8px 10px;
+    border-radius: 100%;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    background-color: var(--color-grey);
+    transition: transform opacity 1000ms;
+}
+
+.item:hover {
+    opacity: .7;
+    transform: scale(.9);
+}
+
+/* THE TOP 3 BUTTON */
+.item1 {
+    background-color: var(--color-light-grey);
+    color: var(--color-black);
+}
+
+.item3 {
+    background-color: var(--color-yellow);
+    font-size: 30px;
+}
+
+/* ZERO DIGIT */
+.itemsZero {
+    background-color: var(--color-grey);
+    border-radius: 100px;
+    grid-column: span 2;
+    width: 100%;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 23%;
+}
