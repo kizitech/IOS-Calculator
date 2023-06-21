@@ -14,7 +14,7 @@ buttons.forEach(clicked =>{
 });
 
 clearBtn.addEventListener('click',()=>{
-    resultBox.textContent = ''
+    resultBox.textContent = '0'
 });
 
 cancelBtn.addEventListener('click',()=>{
