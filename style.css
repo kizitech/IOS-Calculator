@@ -61,18 +61,18 @@ body {
 
 /* RESULT TEXTCONTENT */
 .result span {
-    display: grid;
-    font-size: 60px;
-    overflow-x: scroll;
     width: 100%;
+    display: grid;
+    font-size: 4.5rem;
+    overflow-x: scroll;
 }
 
 
 /* BUTTON CONTAINER */
 .buttons {
+    width: 100%;
     display: grid;
     place-content: center;
-    width: 100%;
     grid-template-columns: repeat(4, 70px);
 }
 
@@ -112,6 +112,10 @@ body {
 .item3 {
     background-color: var(--color-yellow);
     font-size: 30px;
+}
+
+.asterisk {
+    padding-top: 1em;
 }
 
 /* ZERO DIGIT */
