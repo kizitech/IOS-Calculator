@@ -63,7 +63,7 @@ body {
 .result span {
     width: 100%;
     display: grid;
-    font-size: 4.5rem;
+    font-size: 4.375rem;
     overflow-x: scroll;
 }
 
@@ -85,7 +85,6 @@ body {
     outline: none;
     border: none;
     display: flex;
-    color: var(--color-white);
     font-size: 20px;
     cursor: pointer;
     margin: 8px 10px;
@@ -94,6 +93,7 @@ body {
     align-items: center;
     justify-self: center;
     justify-content: center;
+    color: var(--color-white);
     background-color: var(--color-grey);
     transition: transform opacity 1000ms;
 }
